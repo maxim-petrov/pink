@@ -29,11 +29,112 @@
         </nav>
       </div>
       <div class="page-header__inner">
-        <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="page-main">
-      
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на 
+          вашу бонусную карту! Пожалуйста, заполните</p>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Как вас зовут:</legend>
+          <p>
+            <label class="form__label" for="contest_last_name">Фамилия</label>
+            <input class="field field--text form__field" type="text" name="last_name" id="contest_last_name" 
+                   placeholder="Укажите фамилию *" required>
+          </p>
+          <p>
+            <label class="form__label" for="contest_first_name">Имя</label>
+            <input class="field field--text form__field" type="text" name="first_name" id="contest_first_name" 
+                   placeholder="Введите ваше имя *" required>
+          </p>
+          <p>
+            <label class="form__label" for="contest_patronymic">Отчество</label>
+            <input class="field field--text form__field" type="text" name="patronymic" id="contest_patronymic"  
+                   placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии:</legend>
+          <p class="form__group">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="selfie" checked>  
+              Сделал селфи с акулой
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="sunburn" checked>
+              Обгорел на пляже
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="chuck-norris">
+              Видел Чака Норриса
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="souvenirs">
+              Накупил сувениров
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="form__group">
+              <input class="checkbox__input" type="checkbox" name="tower" checked>
+              Удержал башню
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="form__group">
+              <input class="checkbox__input" type="checkbox" name="hotel">
+              Разгромил отель
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Контактная информация:</legend>
+          <p class="form__group">
+            <label class="form__label" for="contest__phone">Номер телефона</label>
+            <input type="number" name="phone" id="contest__phone" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="form__group">
+            <label class="form__label" for="contest__email">Адрес почты</label>
+            <input type="email" name="email" id="contest__email" placeholder="Введите почту *" required>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии:</legend>
+          <p class="form__group">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="app" id="contest__iOS" checked>
+              Pink для iOS
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="app" id="contest__android">
+              Pink на Android
+            </label>
+          </p>
+          <p class="form__group">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="app" id="contest__windows">
+              Windows Phone
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <label class="form__label" for="contest__emotions"></label>
+          <textarea class="field field--area" rows="4" cols="40" name="emotions" id="contest__emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button class="button" type="submit">Отправить форму</button>
+        <p class="form__footnote">
+          <span class="form__asterisk">*</span> — обязательные поля
+        </p>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__logo">
