@@ -1,0 +1,47 @@
+.form__caption {
+  @include reset();
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form__fieldset {
+  @include reset();
+  border: none;
+}
+
+.form__fieldset--grey {
+  background-color: $color-neutral;
+}
+
+.form__title {
+  float: left;
+  width: 100%;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+.form__group {
+  @include reset();
+}
+
+.form__label {
+  display: block;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+.checkbox,
+.radio {
+  font-size: 18px;
+}
+
+.form__footnote {
+  @include reset();
+  text-transform: uppercase;
+}
+
+.form__asterisk {
+  color: $color-secondary;
+}

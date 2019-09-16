@@ -1,0 +1,35 @@
+.button {
+  position: relative;
+  display: inline-block;
+  max-width: 270px;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: inherit;
+  color: $color-secondary;
+  text-align: center;
+  word-wrap: normal;
+  white-space: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 3px solid $color-secondary;
+  border-radius: 30px;
+}
+
+.button--form-submit {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-light;
+  text-transform: uppercase;
+  background-color: $color-success;
+  border: none;
+  border-radius: 2px;
+}
+
+.button--white {
+  color: $color-light;
+  border-color: $color-light;
+}
+
