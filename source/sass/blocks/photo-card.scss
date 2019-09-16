@@ -1,0 +1,30 @@
+.photo-card {
+  margin-bottom: 20px;
+}
+
+.photo-card__info {
+  padding: 20px;
+  background-color: $color-neutral;
+}
+
+.photo-card__author-and-date {
+  @include reset();
+}
+
+.photo-card__date {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo-card__text {
+  @include reset();
+}
+
+.photo-card__likes {
+  @include reset();
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-secondary;
+}

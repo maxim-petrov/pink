@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
@@ -16,11 +17,11 @@
         <li class="site-list__item site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="photo.html">Фотографии</a>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link--active">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -35,7 +36,7 @@
 <main class="page-main">
   <section class="photos">
     <h2 class="visually-hidden">Популярные фотографии</h2>
-    <p class="photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает 
+    <p class="photos__caption">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает 
       ваших?</p>
     <ul class="photos__list">
       <li class="photo-card photo-card--wide">
@@ -134,8 +135,8 @@
   </section>
   <section class="photo-upload">
     <h2 class="visually-hidden">Добавление фотографии</h2>
-    <p class="photo-upload__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-    <form class="photo-upload__form photo-upload-form">
+    <p class="photo-upload__caption">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <form class="photo-upload-form photo-upload__form">
       <p class="photo-upload-form__image">
         <img src="https://placehold.it/280x374" width="280" height="374" alt="Изображение с примененным фильтром">
       </p>
@@ -185,8 +186,8 @@
       <a class="social-links__link" href="https://vk.com/htmlacademy">Наш канал на Ютубе</a>
     </li>
   </ul>
-  <p class="page__footer__copyright">
-    <span class="page__footer__text">Разработано</span>
+  <p class="page-footer__copyright">
+    <span class="page-footer__text">Разработано</span>
     <img src="https://placehold.it/27x34" width="27" height="27" alt="Альтернативные логотип Pink">
   </p>
 </footer>

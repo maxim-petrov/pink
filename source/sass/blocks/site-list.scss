@@ -1,0 +1,17 @@
+.site-list {
+  @include reset-list();
+}
+
+.site-list__link {
+  @include links($color-light, $color-light, $color-secondary, rgba($color-light, .3));
+}
+
+.site-list__item--active .site-list__link {
+  border-bottom: 2px solid $color-light;
+
+  &:hover,
+  &:active {
+    color: $color-light;
+  }
+}
+

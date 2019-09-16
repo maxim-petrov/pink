@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header class="page-header">
@@ -19,8 +20,8 @@
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link--active">Конкурс</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -34,27 +35,27 @@
     </header>
     <main class="page-main">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на 
+        <p class="form__caption">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на 
           вашу бонусную карту! Пожалуйста, заполните</p>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Как вас зовут:</legend>
-          <p>
+          <p class="form__group">
             <label class="form__label" for="contest_last_name">Фамилия</label>
             <input class="field field--text form__field" type="text" name="last_name" id="contest_last_name" 
                    placeholder="Укажите фамилию *" required>
           </p>
-          <p>
+          <p class="form__group">
             <label class="form__label" for="contest_first_name">Имя</label>
             <input class="field field--text form__field" type="text" name="first_name" id="contest_first_name" 
                    placeholder="Введите ваше имя *" required>
           </p>
-          <p>
+          <p class="form__group">
             <label class="form__label" for="contest_patronymic">Отчество</label>
             <input class="field field--text form__field" type="text" name="patronymic" id="contest_patronymic"  
                    placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--grey">
           <legend class="form__title">Ваши безбашенные достижения в путешествии:</legend>
           <p class="form__group">
             <label class="checkbox">
@@ -81,13 +82,13 @@
             </label>
           </p>
           <p class="form__group">
-            <label class="form__group">
+            <label class="checkbox">
               <input class="checkbox__input" type="checkbox" name="tower" checked>
               Удержал башню
             </label>
           </p>
           <p class="form__group">
-            <label class="form__group">
+            <label class="checkbox">
               <input class="checkbox__input" type="checkbox" name="hotel">
               Разгромил отель
             </label>
@@ -104,8 +105,8 @@
             <input type="email" name="email" id="contest__email" placeholder="Введите почту *" required>
           </p>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__title">Ваши безбашенные достижения в путешествии:</legend>
+        <fieldset class="form__fieldset form__fieldset--grey">
+          <legend class="form__title">С каким приложением путешествовали?</legend>
           <p class="form__group">
             <label class="radio">
               <input class="radio__input" type="radio" name="app" id="contest__iOS" checked>
@@ -125,12 +126,12 @@
             </label>
           </p>
         </fieldset>
-        <fieldset class="fieldset">
+        <fieldset class="form__fieldset">
           <legend class="form__title">Опишите свои эмоции</legend>
           <label class="form__label" for="contest__emotions"></label>
           <textarea class="field field--area" rows="4" cols="40" name="emotions" id="contest__emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="button" type="submit">Отправить форму</button>
+        <button class="button button--form-submit" type="submit">Отправить форму</button>
         <p class="form__footnote">
           <span class="form__asterisk">*</span> — обязательные поля
         </p>
@@ -151,8 +152,8 @@
           <a class="social-links__link" href="https://vk.com/htmlacademy">Наш канал на Ютубе</a>
         </li>
       </ul>
-      <p class="page__footer__copyright">
-        <span class="page__footer__text">Разработано</span>
+      <p class="page-footer__copyright">
+        <span class="page-footer__text">Разработано</span>
         <img src="https://placehold.it/27x34" width="27" height="27" alt="Альтернативные логотип Pink">
       </p>
     </footer>

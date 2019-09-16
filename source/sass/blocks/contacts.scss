@@ -1,0 +1,37 @@
+.contacts__caption,
+.contacts__phone,
+.contacts__email,
+.contacts__map-image,
+.contacts__address {
+  @include reset();
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__caption {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+.contacts__label {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $color-secondary;
+  text-align: center;
+}

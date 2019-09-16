@@ -1,0 +1,25 @@
+.pricing-table__item--head {
+  padding: 10px;
+  color: $color-light;
+  background-color: $color-primary;
+}
+
+.pricing-table__title {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-table__price {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+.pricing-table__item {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
