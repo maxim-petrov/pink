@@ -7,27 +7,34 @@
 }
 
 .form__fieldset {
-  @include reset();
+  padding: 35px 20px 25px;
+  margin: 0 -20px;
   border: none;
 }
 
-.form__fieldset--grey {
+.form__fieldset:nth-child(2n) {
   background-color: $color-neutral;
 }
 
 .form__title {
   float: left;
   width: 100%;
+  padding: 0 20px;
+  margin-bottom: 22px;
+  line-height: 18px;
   color: $color-secondary;
   text-transform: uppercase;
 }
 
 .form__group {
   @include reset();
+  margin-bottom: 19px;
 }
 
 .form__label {
   display: block;
+  padding-left: 22px;
+  margin-bottom: 8px;
   color: $color-secondary;
   text-transform: uppercase;
 }
