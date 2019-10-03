@@ -7,21 +7,3 @@
   @include reset();
   list-style: none;
 }
-
-@mixin links($link, $visited, $hover, $active) {
-  & {
-    color: $link;
-
-    &:visited {
-      color: $visited;
-    }
-
-    &:hover {
-      color: $hover;
-    }
-
-    &:active {
-      color: $active;
-    }
-  }
-}
