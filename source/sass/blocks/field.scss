@@ -1,0 +1,18 @@
+.field {
+  font-family: inherit;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+}
+
+.field::placeholder {
+  color: $color-dark;
+}
+
+.field--area {
+  min-height: 201px;
+}

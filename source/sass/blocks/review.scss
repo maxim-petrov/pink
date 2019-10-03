@@ -1,11 +1,15 @@
 .review__author {
   @include reset();
+  margin-bottom: 13px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px;
   color: #000;
+  text-align: center;
 }
 
 .review__text {
   @include reset();
+  line-height: 30px;
+  text-align: center;
 }

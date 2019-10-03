@@ -1,0 +1,14 @@
+.like-button {
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 15px;
+  font-size: 0;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.like-button svg {
+  fill: $color-secondary;
+}

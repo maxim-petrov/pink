@@ -1,0 +1,17 @@
+.tool-button {
+  display: inline-block;
+  padding: 0;
+  font-size: 0;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.tool-button svg {
+  fill: rgba($color-primary, .3);
+}
+
+.tool-button--active svg {
+  fill: $color-secondary;
+}

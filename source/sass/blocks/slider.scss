@@ -1,0 +1,30 @@
+.slider__toggles {
+  @include reset();
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0;
+  vertical-align: top;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.slider__toggle::before {
+  display: block;
+  width: 6px;
+  height: 6px;
+  content: "";
+  background-color: #d7d7d7;
+  border-radius: 50%;
+}
+
+.slider__toggle--active::before {
+  background-color: $color-light;
+  box-shadow: 0 0 0 3px $color-primary-light;
+}

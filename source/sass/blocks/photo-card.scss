@@ -1,9 +1,50 @@
 .photo-card {
+  position: relative;
   margin-bottom: 20px;
 }
 
+.photo-card:last-child {
+  margin-bottom: 0;
+}
+
+.photo-card__panorama-picture {
+  display: block;
+  height: 137px;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.photo-card__panorama-picture::before {
+  position: absolute;
+  right: 0;
+  padding: 6px 20px 6px 19px;
+  font-size: 12px;
+  font-weight: 700;
+  color: $color-light;
+  text-transform: uppercase;
+  content: "Панорама дня";
+  background-color: $color-secondary;
+}
+
+.photo-card__panorama-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-card__card-picture {
+  display: block;
+  height: 180px;
+}
+
+.photo-card__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .photo-card__info {
-  padding: 20px;
+  padding: 18px 18px 20px;
   background-color: $color-neutral;
 }
 
@@ -20,11 +61,13 @@
 
 .photo-card__text {
   @include reset();
+  margin-bottom: 9px;
 }
 
 .photo-card__likes {
   @include reset();
+  position: relative;
   font-size: 12px;
-  text-transform: uppercase;
   color: $color-secondary;
+  text-transform: uppercase;
 }

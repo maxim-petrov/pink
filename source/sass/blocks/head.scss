@@ -1,0 +1,57 @@
+.head {
+  margin-bottom: 40px;
+  color: $color-light;
+  background-color: $color-primary;
+}
+
+.head__intro {
+  display: flex;
+  min-height: 462px;
+  background-color: $color-primary;
+  background-image: url("../../img/bg-back-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.head__inner {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.head__title {
+  @include reset();
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+
+.head__app-picture {
+  @include reset();
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 258px;
+  height: 286px;
+  margin-top: auto;
+}
+
+.head--photo,
+.head--form {
+  margin-bottom: 45px;
+}
+
+
+.head--photo .head__intro,
+.head--form .head__intro {
+  min-height: 237px;
+  padding-top: 96px;
+}
+
+

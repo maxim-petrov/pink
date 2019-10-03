@@ -1,7 +1,29 @@
-.page-footer__logo {
+.page-footer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.page-footer--photo {
+  display: flex;
+}
+
+.page-footer__picture {
   @include reset();
+  width: 147px;
+  height: 40px;
+  margin-bottom: 40px;
 }
 
 .page-footer__copyright {
   @include reset();
+}
+
+.page-footer__text {
+  margin-right: 10px;
+}
+
+.page-footer__copyright-image {
+  vertical-align: middle;
 }

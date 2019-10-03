@@ -1,3 +1,48 @@
 .photo-upload-form {
-  background-color: $color-neutral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.photo-upload-form__picture {
+  @include reset();
+  width: 100%;
+  height: 374px;
+  margin-bottom: 42px;
+}
+
+.photo-upload-form__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-upload-form__tools {
+  @include reset-list();
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 72px;
+  margin-bottom: 38px;
+}
+
+.photo-upload-form__tool {
+  padding-right: 17px;
+  padding-left: 17px;
+}
+
+.photo-upload-form__tool::before {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  left: -20px;
+  height: 1px;
+  content: "";
+  background-color: #dddfe0;
+}
+
+.photo-upload-form__button:first-of-type {
+  margin-bottom: 12px;
+}
+

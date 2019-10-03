@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 58px;
+}
+
 .form__caption {
   @include reset();
   font-size: 24px;
@@ -20,15 +24,17 @@
   float: left;
   width: 100%;
   padding: 0 20px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   line-height: 18px;
   color: $color-secondary;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .form__group {
   @include reset();
   margin-bottom: 19px;
+  clear: both;
 }
 
 .form__label {
@@ -46,6 +52,7 @@
 
 .form__footnote {
   @include reset();
+  text-align: center;
   text-transform: uppercase;
 }
 

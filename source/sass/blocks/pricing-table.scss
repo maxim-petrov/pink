@@ -1,7 +1,34 @@
+.pricing-table {
+  width: 300%;
+  margin-bottom: 38px;
+  border-collapse: collapse;
+  transform: translateX(-33.3%);
+}
+
+.pricing-table__item {
+  min-width: 280px;
+  padding: 15px 15px 14px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: $color-light;
+  border: 2px solid #e5e5e5;
+}
+
 .pricing-table__item--head {
-  padding: 10px;
+  padding: 15px 10px;
   color: $color-light;
   background-color: $color-primary;
+  border-top-color: $color-primary;
+  border-bottom-color: $color-primary;
+}
+
+.pricing-table__item--empty {
+  display: none;
+}
+
+.pricing-table__item--name {
+  display: none;
 }
 
 .pricing-table__title {
@@ -18,8 +45,3 @@
   text-align: center;
 }
 
-.pricing-table__item {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-}

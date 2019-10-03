@@ -1,8 +1,8 @@
 .button {
   position: relative;
   display: inline-block;
-  max-width: 270px;
-  padding: 10px 40px;
+  min-width: 281px;
+  padding: 11px 35px 14px;
   font-size: 18px;
   font-weight: 700;
   line-height: inherit;
@@ -19,6 +19,8 @@
 }
 
 .button--form-submit {
+  padding: 17px 35px 16px;
+  margin-bottom: 38px;
   font-size: 18px;
   line-height: 30px;
   color: $color-light;
@@ -33,3 +35,7 @@
   border-color: $color-light;
 }
 
+.button--cancel {
+  color: rgba($color-primary, .1);
+  border-color: rgba($color-primary, .1);
+}

@@ -1,11 +1,18 @@
+.feature {
+  margin-bottom: 29px;
+}
+
 .feature__title {
   @include reset();
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
   color: #000;
+  text-align: center;
 }
 
 .feature__text {
   @include reset();
+  text-align: center;
 }
