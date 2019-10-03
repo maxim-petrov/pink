@@ -1,32 +1,46 @@
 @import "mixins";
 @import "variables";
 @import "scaffolding";
-@import "blocks/range-slider";
-@import "blocks/tool";
-@import "blocks/tool-button";
+@import "blocks/container";
 @import "blocks/button";
-@import "blocks/checkbox";
-@import "blocks/contacts";
-@import "blocks/devices-list";
-@import "blocks/feature";
-@import "blocks/features";
-@import "blocks/field";
-@import "blocks/form";
-@import "blocks/get-app";
-@import "blocks/main-nav";
-@import "blocks/photo-card";
 @import "blocks/page-header";
-@import "blocks/page-footer";
-@import "blocks/photo-upload";
-@import "blocks/page-main";
-@import "blocks/photo-upload-form";
-@import "blocks/social-links";
-@import "blocks/slider";
+@import "blocks/main-nav";
 @import "blocks/site-list";
+@import "blocks/head";
+@import "blocks/get-app";
+@import "blocks/devices-list";
+@import "blocks/features";
+@import "blocks/feature";
 @import "blocks/reviews";
 @import "blocks/review";
-@import "blocks/radio";
+@import "blocks/slider";
 @import "blocks/pricing";
-@import "blocks/photos";
 @import "blocks/pricing-table";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+@import "blocks/social-links";
+@import "blocks/photos";
+@import "blocks/photo-card";
+@import "blocks/like-button";
+@import "blocks/photo-upload";
+@import "blocks/photo-upload-form";
+@import "blocks/tool-button";
+@import "blocks/range-slider";
+@import "blocks/contest";
+@import "blocks/form";
+@import "blocks/field";
+@import "blocks/checkbox";
+@import "blocks/radio";
 
+/*
+@import "blocks/tool";
+
+
+@import "blocks/page-main";
+@import "blocks/social-links";
+
+
+@import "blocks/pricing";
+
+@import "blocks/pricing-table";
+*/
