@@ -1,4 +1,10 @@
-.review__author {
+.review {
+  @media (min-width: $screen-tablet) {
+    display: flex;
+  }
+}
+
+.review__author-name {
   @include reset();
   margin-bottom: 13px;
   font-size: 18px;
@@ -6,10 +12,45 @@
   line-height: 30px;
   color: #000;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  @media (min-width: $screen-desktop) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.review__author-info {
+  @include reset();
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $screen-tablet) {
+    display: block;
+  }
 }
 
 .review__text {
   @include reset();
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    order: -1;
+    margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    max-width: 700px;
+  }
 }

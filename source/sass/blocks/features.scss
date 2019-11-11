@@ -1,11 +1,27 @@
 .features {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .features__heading {
   position: relative;
-  padding: 0 0 37px;
+  padding: 0 0 63px;
   overflow: hidden;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 97px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-bottom: 170px;
+  }
 }
 
 .features__heading::after {
@@ -16,25 +32,67 @@
   content: "";
   border-top: 10vw solid transparent;
   border-right: 100vw solid $color-neutral;
+
+  @media (min-width: $screen-tablet) {
+    border-top: 7.5vw solid transparent;
+  }
 }
 
 .features__content {
   position: relative;
   padding-top: 47px;
-  padding-bottom: 289px;
+  padding-bottom: 0;
   background-color: $color-neutral;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% calc(100% + 42px);
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
 }
 
 .features__inner {
+  position: relative;
   width: 100%;
   max-width: 960px;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.features__content .features__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-tablet) {
+    flex-direction: row;
+  }
+}
+
+.features__picture {
+  display: block;
+  align-self: center;
+  width: 157px;
+  height: 277px;
+  overflow: hidden;
+
+  @media (min-width: $screen-tablet) {
+    order: -1;
+    min-width: 268px;
+    height: 481px;
+    margin-top: -68px;
+    margin-right: 41px;
+    overflow: visible;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: none;
+  }
 }
 
 .features__primary-text {
@@ -44,8 +102,41 @@
   font-weight: 300;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.features__primary-text:last-of-type {
+  padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: $screen-desktop) {
+    padding: 0 200px;
+  }
 }
 
 .features__list {
   @include reset-list();
+  margin-bottom: 41px;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -115px;
+    margin-bottom: 34px;
+  }
 }
+

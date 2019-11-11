@@ -2,6 +2,14 @@
   @include reset-list();
   display: flex;
   margin-bottom: 14px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 46px;
+  }
 }
 
 .devices-list__item {

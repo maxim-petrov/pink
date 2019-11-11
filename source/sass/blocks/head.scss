@@ -2,20 +2,38 @@
   margin-bottom: 40px;
   color: $color-light;
   background-color: $color-primary;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    margin-bottom: 67px;
+  }
 }
 
 .head__intro {
   display: flex;
   min-height: 462px;
+  overflow: hidden;
   background-color: $color-primary;
   background-image: url("../../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $screen-tablet) {
+    min-height: 729px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    min-height: 853px;
+  }
 }
 
 .head__inner {
   position: relative;
+  display: flex;
   width: 100%;
   max-width: 960px;
   padding-right: 20px;
@@ -34,12 +52,25 @@
 
 .head__app-picture {
   @include reset();
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 258px;
   height: 286px;
   margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $screen-tablet) {
+    height: 545px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $screen-desktop) {
+    height: 644px;
+    margin-right: 0;
+  }
+}
+
+.head__app-image {
+  display: block;
+  max-width: none;
 }
 
 .head--photo,

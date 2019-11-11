@@ -3,6 +3,11 @@
   margin-bottom: 38px;
   border-collapse: collapse;
   transform: translateX(-33.3%);
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    transform: none;
+  }
 }
 
 .pricing-table__item {
@@ -13,6 +18,12 @@
   text-transform: uppercase;
   background-color: $color-light;
   border: 2px solid #e5e5e5;
+
+  @media (min-width: $screen-tablet) {
+    width: 25%;
+    min-width: 0;
+    text-transform: none;
+  }
 }
 
 .pricing-table__item--head {
@@ -25,10 +36,22 @@
 
 .pricing-table__item--empty {
   display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: table-cell;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .pricing-table__item--name {
   display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: table-cell;
+    width: 25%;
+  }
 }
 
 .pricing-table__title {

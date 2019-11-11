@@ -1,5 +1,9 @@
 .contacts__info {
   margin-bottom: 36px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .contacts__inner {
@@ -9,6 +13,12 @@
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .contacts__caption,
@@ -21,15 +31,27 @@
 
 .contacts__phone,
 .contacts__email,
-.contacts__address{
+.contacts__address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+
+  @media (min-width: $screen-tablet) {
+    width: 300px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 44px;
+  }
 }
 
 .contacts__address {
   margin-bottom: 0;
+
+  @media (min-width: $screen-tablet) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .contacts__primary-text {
@@ -39,6 +61,13 @@
   font-weight: 300;
   line-height: 29px;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    margin-bottom: 42px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 .contacts__label {
@@ -59,22 +88,41 @@
 
 .contacts__map {
   position: relative;
-  min-height: 200px;
-  background-color: #2aab6d;
-  background-image: url("../../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: cover;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  background-color: $color-neutral;
+
+  @media (min-width: $screen-tablet) {
+    height: 372px;
+  }
 }
 
 .contacts__map::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 0;
   height: 0;
   content: "";
   border-top: 36px solid #fff;
   border-right: 50vw solid transparent;
   border-left: 50vw solid transparent;
+
+  @media (min-width: $screen-tablet) {
+    border-top: 66px solid #fff;
+  }
+}
+
+.contacts__map-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  min-width: 660px;
+  transform: translateX(-50%);
+
+  @media (min-width: $screen-tablet) {
+    min-width: 1200px;
+  }
 }

@@ -1,5 +1,29 @@
 .feature {
   margin-bottom: 29px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 292px;
+  }
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+.feature__desktop-image {
+  display: none;
+
+  @media (min-width: $screen-desktop) {
+    display: block;
+    margin-bottom: 55px;
+  }
 }
 
 .feature__title {
@@ -10,9 +34,32 @@
   line-height: 28px;
   color: #000;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $screen-desktop) {
+    max-width: 240px;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .feature__text {
   @include reset();
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    text-align: left;
+  }
+
+  @media (min-width: $screen-desktop) {
+    max-width: 245px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }

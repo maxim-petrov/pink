@@ -2,6 +2,12 @@
   @include reset-list();
   display: flex;
   margin-bottom: 39px;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 3px;
+    margin-right: 22px;
+    margin-bottom: 0;
+  }
 }
 
 .social-links__item {
@@ -23,6 +29,20 @@
   border-radius: 50%;
 }
 
-.social-links__link svg {
+.social-links__icon {
   fill: $color-secondary;
 }
+
+.social-links__icon--twitter {
+  margin-left: 3px;
+}
+
+.social-links__icon--facebook {
+  margin-bottom: 1px;
+  margin-left: 3px;
+}
+
+.social-links__icon--youtube {
+  margin-left: 4px;
+}
+
