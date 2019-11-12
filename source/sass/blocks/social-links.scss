@@ -8,6 +8,10 @@
     margin-right: 22px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $screen-desktop) {
+    margin-right: 0;
+  }
 }
 
 .social-links__item {

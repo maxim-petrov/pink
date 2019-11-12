@@ -1,9 +1,15 @@
 .page-footer {
   display: none;
   padding-bottom: 40px;
+
   @media (min-width: $screen-tablet) {
     display: block;
     padding-top: 36px;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-top: 70px;
+    margin-bottom: 35px;
   }
 }
 
@@ -22,6 +28,11 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  @media (min-width: $screen-desktop) {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -58,6 +69,10 @@
 
 .page-footer__text {
   margin-right: 10px;
+
+  @media (min-width: $screen-desktop) {
+    font-size: 18px;
+  }
 }
 
 .page-footer__logo-htmlacademy {
