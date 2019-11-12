@@ -1,15 +1,21 @@
 .page-footer {
-  display: none;
   padding-bottom: 40px;
 
   @media (min-width: $screen-tablet) {
-    display: block;
     padding-top: 36px;
   }
 
   @media (min-width: $screen-desktop) {
     padding-top: 70px;
     margin-bottom: 35px;
+  }
+}
+
+.page-footer--index-page {
+  display: none;
+
+  @media (min-width: $screen-tablet) {
+    display: block;
   }
 }
 
