@@ -1,6 +1,40 @@
 .photo-card {
   position: relative;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: $color-neutral;
+
+  @media (min-width: $screen-tablet) {
+    flex-grow: 1;
+    width: 300px;
+    min-height: 455px;
+  }
+}
+
+.photo-card:nth-of-type(2n) {
+  @media (min-width: $screen-tablet) {
+    margin-right: 20px;
+  }
+}
+
+.photo-card:nth-of-type(2) {
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+  }
+}
+
+.photo-card:nth-of-type(3) {
+  @media (min-width: $screen-tablet) {
+    margin-top: 0;
+  }
+}
+
+.photo-card--wide {
+  margin-top: 0;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .photo-card:last-child {
@@ -12,6 +46,10 @@
   height: 137px;
   margin-right: -20px;
   margin-left: -20px;
+
+  @media (min-width: $screen-tablet) {
+    height: 509px;
+  }
 }
 
 .photo-card__panorama-picture::before {
@@ -24,6 +62,10 @@
   text-transform: uppercase;
   content: "Панорама дня";
   background-color: $color-secondary;
+
+  @media (min-width: $screen-tablet) {
+    top: 57px;
+  }
 }
 
 .photo-card__panorama-image {
@@ -35,6 +77,10 @@
 .photo-card__card-picture {
   display: block;
   height: 180px;
+
+  @media (min-width: $screen-tablet) {
+    height: 300px;
+  }
 }
 
 .photo-card__card-image {
@@ -45,7 +91,14 @@
 
 .photo-card__info {
   padding: 18px 18px 20px;
-  background-color: $color-neutral;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 28px 15px;
+  }
 }
 
 .photo-card__author-and-date {
@@ -62,6 +115,16 @@
 .photo-card__text {
   @include reset();
   margin-bottom: 9px;
+
+  @media (min-width: $screen-tablet) {
+    width: 100%;
+  }
+}
+
+.photo-card--wide .photo-card__text {
+  @media (min-width: $screen-tablet) {
+    order: 1;
+  }
 }
 
 .photo-card__likes {
@@ -70,4 +133,10 @@
   font-size: 12px;
   color: $color-secondary;
   text-transform: uppercase;
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
+

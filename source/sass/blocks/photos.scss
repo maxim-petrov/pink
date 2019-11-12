@@ -13,13 +13,29 @@
 
 .photos__caption {
   @include reset();
+  padding-right: 15px;
+  padding-left: 15px;
   margin-bottom: 49px;
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $screen-tablet) {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 76px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .photos__list {
   @include reset-list();
+
+  @media (min-width: $screen-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

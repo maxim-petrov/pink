@@ -7,6 +7,17 @@
   cursor: pointer;
   background-color: transparent;
   border: 0;
+
+  @media (min-width: $screen-tablet) {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+.photo-card--wide .like-button {
+  @media (min-width: $screen-tablet) {
+    margin-left: 18px;
+  }
 }
 
 .like-button svg {

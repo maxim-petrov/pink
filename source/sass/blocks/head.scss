@@ -76,6 +76,10 @@
 .head--photo,
 .head--form {
   margin-bottom: 45px;
+
+  @media (min-width: $screen-tablet) {
+    margin-bottom: 92px;
+  }
 }
 
 
@@ -83,6 +87,19 @@
 .head--form .head__intro {
   min-height: 237px;
   padding-top: 96px;
+
+  @media (min-width: $screen-tablet) {
+    padding-top: 179px;
+    padding-bottom: 140px;
+  }
+}
+
+.head--photo .head__title,
+.head--form .head__title {
+  @media (min-width: $screen-tablet) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 
